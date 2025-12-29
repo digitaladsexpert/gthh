@@ -75,11 +75,16 @@ p{
 }
 .list{
   margin-top:10px;
+  list-style:disc;
+  padding-left:18px;
 }
 .list li{
   font-size:14px;
   margin-bottom:8px;
   color:var(--text);
+}
+.list li::marker{
+  color:var(--accent);
 }
 .btn{
   display:block;
@@ -115,88 +120,114 @@ p{
   text-align:center;
   margin-top:6px;
 }
-.divider{
-  height:1px;
-  background:linear-gradient(to right,transparent,#23315a,transparent);
-  margin:14px 0;
+.footer-links{
+  margin-bottom:6px;
+}
+.footer-links a{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:500;
+}
+.footer-links a:hover{
+  text-decoration:underline;
+}
+.fb-disclaimer{
+  font-size:11px;
+  color:#64748b;
+  margin-top:6px;
+  line-height:1.5;
 }
 </style>
 </head>
 
 <body>
-<div class="container">
+<main class="container">
 
-<!-- HEADER -->
-<div class="card header">
-  <img src="gth.png" alt="Logo">
-  <h1>GOLD TRADER HUB</h1>
-  <p>Execution • Discipline • Capital Protection</p>
-</div>
+  <!-- HEADER -->
+  <section class="card header">
+    <img src="gth.png" alt="Gold Trader Hub Logo" loading="lazy">
+    <h1>GOLD TRADER HUB</h1>
+    <p>Execution • Discipline • Capital Protection</p>
+  </section>
 
-<!-- CTA 1 -->
-<div class="card">
-  <a class="btn btn-primary" href="https://t.me/+5Gk5IhpREVplOTc1">
-    Join Telegram (Observation Access)
-  </a>
-</div>
+  <!-- CTA 1 -->
+  <section class="card">
+    <a class="btn btn-primary" href="https://t.me/+5Gk5IhpREVplOTc1">
+      Join Telegram (Observation Access)
+    </a>
+  </section>
 
-<!-- FILTER -->
-<div class="card">
-  <h2>Not a Free Signal Channel</h2>
-  <p>
-    This environment is designed for traders who
-    value structured execution, discipline,
-    and capital protection.
-  </p>
-  <div class="warning">
-    Free tips, profit screenshots,
-    or guarantees are NOT provided.
-  </div>
-</div>
+  <!-- FILTER -->
+  <section class="card">
+    <h2>Not a Free Signal Channel</h2>
+    <p>
+      This environment is designed for traders who value
+      structured execution, discipline, and capital protection.
+    </p>
+    <div class="warning">
+      Free tips, profit screenshots, or guarantees are NOT provided.
+    </div>
+  </section>
 
-<!-- BENEFITS -->
-<div class="card">
-  <h2>What You Get</h2>
-  <ul class="list">
-    <li>• Execution-focused trade structure</li>
-    <li>• Trade management guidance</li>
-    <li>• Capital & risk protection mindset</li>
-    <li>• Discipline-driven trading environment</li>
-  </ul>
-</div>
+  <!-- BENEFITS -->
+  <section class="card">
+    <h2>What You Get</h2>
+    <ul class="list">
+      <li>Execution-focused trade structure</li>
+      <li>Trade management guidance</li>
+      <li>Capital & risk protection mindset</li>
+      <li>Discipline-driven trading environment</li>
+    </ul>
+  </section>
 
-<!-- CTA 2 -->
-<div class="card">
-  <a class="btn btn-outline" href="https://t.me/+5Gk5IhpREVplOTc1 L">
-    Open Trading Account (Unlock Execution Access)
-  </a>
-</div>
+  <!-- CTA 2 -->
+  <section class="card">
+    <a class="btn btn-outline" href="https://t.me/+5Gk5IhpREVplOTc1">
+      Open Trading Account (Unlock Execution Access)
+    </a>
+  </section>
 
-<!-- QUALIFICATION -->
-<div class="card">
-  <h2>How Execution Access Works</h2>
-  <p>
-    Execution access is unlocked only after
-    account activation with our partner broker.
-  </p>
-  <p style="margin-top:8px;">
-    VIP execution access is complimentary
-    for active and disciplined traders.
-  </p>
-</div>
+  <!-- QUALIFICATION -->
+  <section class="card">
+    <h2>How Execution Access Works</h2>
+    <p>
+      Execution access is unlocked only after account
+      activation with our partner broker.
+    </p>
+    <p style="margin-top:8px;">
+      VIP execution access is complimentary for
+      active and disciplined traders.
+    </p>
+  </section>
 
-<!-- CTA 3 -->
-<div class="card">
-  <a class="btn btn-support" href="https://t.me/TeamGTH">
-    Talk to Support (Serious Traders Only)
-  </a>
-</div>
+  <!-- CTA 3 -->
+  <section class="card">
+    <a class="btn btn-support" href="https://t.me/TeamGTH">
+      Talk to Support (Serious Traders Only)
+    </a>
+  </section>
 
-<div class="footer">
-  Trading involves risk. No profit is guaranteed.<br>
-  This is not investment advice.
-</div>
+  <!-- FOOTER -->
+  <footer class="footer">
 
-</div>
+    <div class="footer-links">
+      <a href="https://ElitePips.online/privacy" target="_blank">Privacy Policy</a> •
+      <a href="https://ElitePips.online/disclaimer" target="_blank">Disclaimer</a> •
+      <a href="https://ElitePips.online/terms" target="_blank">Terms</a>
+    </div>
+
+    <div class="fb-disclaimer">
+      This site is not a part of the Facebook™ website or Facebook Inc.
+      This site is NOT endorsed by Facebook™ in any way.
+    </div>
+
+    <div style="margin-top:8px;">
+      Trading involves risk. No profit is guaranteed.<br>
+      This is not investment advice.
+    </div>
+
+  </footer>
+
+</main>
 </body>
 </html>
